@@ -1,0 +1,22 @@
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  
+  background-color: #fff;
+  color: #000;
+  
+  font-family: 'Montserrat', sans-serif;
+}
+
+table, th, td {
+  border: 2px solid #56c3cb;
+  border-collapse: collapse;
+  padding: 5vw 10vw;
+
+  margin: 5% auto 5% auto;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Gallery Page</title>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/gallery.css">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- js -->
+        <script>
+            function menuOnClick() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+            }
+
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+          <div class="logo-container">
+            <img class="logo" src="images/satria-logo.png">
+          </div>
+        </div>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+  
+        <div id="sidebarMenu">
+          <ul class="sidebarMenuInner">
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="about.html">За нас</a></li>
+            <li><a href="gallery.html">Галерия</a></li>
+            <li><a href="contact.php">Контакти</a></li>
+          </ul>
+        </div>
+
+        <main>
+          <div class="container">
+            <h2 style="text-align: center;
+            margin: 40px;">Разгледайте някои от обектите ни!</h2>
+            <div class="image-gallery">
+              <div class="column"> 
+                <div class="image-item">
+                  <img src="gallery/bedroom1.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/bedroom2.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/bedroom3.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/cabinetry1.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/cabinetry2.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/cabinetry3.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen1.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen2.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen3.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen4.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen5.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen6.jpg"/>
+                </div>
+              </div>
+              <div class="column">
+                <div class="image-item">
+                  <img src="gallery/kitchen7.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen8.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen9.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen10.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen11.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen12.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen13.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen14.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen15.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/kitchen16.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/wardrobe1.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/wardrobe2.jpg"/>
+                </div>
+              </div>
+              <div class="column">
+                <div class="image-item">
+                  <img src="gallery/wardrobe3.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/wardrobe4.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/wardrobe5.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/wardrobe6.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/wardrobe7.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/liv-room1.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/liv-room2.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/liv-room3.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/liv-room4.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/liv-room5.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/office1.jpg"/>
+                </div>
+                <div class="image-item">
+                  <img src="gallery/office2.jpg"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+.container {
+    padding: 40px 5%;
+}
+  
+.heading-text {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+  
+.heading-text span {
+    font-weight: 100;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.image-gallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.image-item img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.25s ease;
+}
+  
+@media only screen and (min-width: 768px) {
+    .image-gallery {
+      flex-direction: row;
+    }
+}
+
+.image-item img:hover {
+    transform: scale(1.1);
+    border: 2px solid #000;
+}

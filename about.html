@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>About Page</title>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- js -->
+        <script>
+            function menuOnClick() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo-container">
+              <img class="logo" src="images/satria-logo.png">
+            </div>
+          </div>
+          <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+          </label>
+    
+          <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+              <li><a href="index.html">Начало</a></li>
+              <li><a href="about.html">За нас</a></li>
+              <li><a href="gallery.html">Галерия</a></li>
+              <li><a href="contact.php">Контакти</a></li>
+            </ul>
+          </div>
+
+          <main class="main">
+            <p class="description">
+              Ние сме фирма с дългогодишен опит в сферата на мебелиерството <br>
+              и при нас винаги можете да разчитате на лично отношение и задоволителни резултати.<br>
+            </p>
+
+              <table class="table">
+                <tr>
+                  <th colspan="2" 
+                  style="font-size: 20px">
+                  Използвайки качествени материали и обков, занимаваме се с всичко от...</th>
+                </tr>
+                <tr>
+                  <td>дизайн</td>
+                  <td>вътрешно оформление</td>
+                </tr>
+                <tr>
+                  <td>производство</td>
+                  <td>монтаж</td>
+                </tr>
+                <tr>
+                  <th colspan="2" 
+                  style="font-size: 20px">
+                  ...на мебели за дома, офиса, хотела или обществени сгради.</th>
+                </tr>
+              </table>
+          </main>
+    </body>
+</html>
