@@ -1,8 +1,8 @@
-# Satria Website
+# Company Website
 
-## A test website project for the furniture company Satria
+## A test website project
 
-This project is my first stab at web development. Its goals:
+This project is my first attempt at web development and is only practice. Its goals:
 
 * To create a website for a company
 * To highlight the best about the company 
