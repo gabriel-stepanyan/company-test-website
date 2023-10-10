@@ -13,4 +13,4 @@ Work in progress / known issues:
 * The hamburger menu does not stick to the header on the contact page
 * Descriptions and styling must be improved
 
-The website has no formal affiliation with the company it is about, nor is it a formal representation of it.
+The website neither has formal affiliation with the company it is about, nor does it a formally represent it.
